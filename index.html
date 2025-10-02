@@ -117,13 +117,14 @@
 
                     <div class="mobile-menu fix mb-3"></div>
                     <div class="offcanvas__contact">
-   
+
 
                         <div class="social-icon d-flex align-items-center">
                             <a href="https://www.facebook.com/life2better"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/life2better"><i class="fab fa-instagram"></i></a>
                             <a href="https://www.tiktok.com/@life2better"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://www.linkedin.com/company/life2better"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/company/life2better"><i
+                                    class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -473,14 +474,15 @@
         /* Indicador para ITEMS con submenú (nivel 1: flecha hacia abajo) */
         .navigation>li.has-dropdown>a {
             position: relative;
-         padding-right: 28px;   /* antes 20px */
+            padding-right: 28px;
+            /* antes 20px */
         }
 
         .navigation>li.has-dropdown>a::after {
             content: "▾";
             /* caret abajo */
             position: absolute;
-           
+
             top: 50%;
             transform: translateY(-50%);
             font-weight: 700;
@@ -512,9 +514,9 @@
                 transform: translateY(-50%) rotate(90deg);
             }
 
-              .navigation>li.has-dropdown>a::after {
-           display: none;
-        }
+            .navigation>li.has-dropdown>a::after {
+                display: none;
+            }
         }
     </style>
     <!-- Hero Section S T A R T -->
@@ -877,6 +879,9 @@
         .pros-card {
             display: flex;
             align-items: center;
+            /* centra vertical */
+            justify-content: center;
+            /* centra horizontal */
             border-radius: 5px;
             /* píldora */
             text-decoration: none;
@@ -895,13 +900,19 @@
             color: #000 !important;
         }
 
-        /* Texto */
+        /* El contenedor del texto también centra y elimina rarezas */
         .pros-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
         }
 
         .pros-card h3 {
-          
+            margin: 0;
+            /* quita margen UA */
+            line-height: 1.1;
+            /* evita que quede “alto” */
             font-weight: 700;
             font-size: 28px;
             color: #1c1c1c;
@@ -944,6 +955,10 @@
         }
 
         /* mejor contraste en amarillo */
+        /* Opcional: evitar que iOS auto-ajuste tamaños de texto */
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
 
         /* Responsive */
         @media (max-width: 1199px) {
