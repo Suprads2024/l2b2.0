@@ -77,7 +77,8 @@ a.meanmenu-reveal {
     color: #fff;
     border-top: 1px solid #e0e3ed;
     text-decoration: none;
-    text-transform: uppercase
+    text-transform: uppercase;
+     font-family: 'Eurostile-Medium';
 }
 
 .mean-container .mean-nav ul li li a {

@@ -2753,6 +2753,7 @@ input[type=radio]:checked~label::before {
   text-transform: capitalize;
   border-bottom: 1px solid var(--border) !important;
   border: none;
+    font-family: 'Eurostile-Medium';
 }
 
 .mean-container .mean-nav ul li a:hover {
