@@ -6537,7 +6537,7 @@ input.main-search-input::placeholder {
 }
 .hero-3 .hero-content h6 {
     font-family: 'Eurostile-Bold' !important;
-    font-size: 23px;
+    font-size: 20px;
     letter-spacing: -0.4px;
     color: #fec200;
     text-shadow: 0 0 8px rgba(254,194,0,1), 0 0 16px rgba(0,0,0,0.6);
@@ -11725,13 +11725,13 @@ textarea.is-invalid {
   .product-box-items-wrapper {
     flex-direction: column;   /* de fila pasa a columna */
     align-items: center;      /* centra los botones */
-    gap: 20px;                /* espacio entre uno y otro */
+    gap: 10px;                /* espacio entre uno y otro */
   }
 
   .product-box-items .product-image {
     width: 100%;              /* ocupa todo el ancho disponible */
-    max-width: 300px;         /* límite para que no quede gigante */
-    height: 150px;             /* que la altura se ajuste */
+    max-width: 200px;         /* límite para que no quede gigante */
+    height: 100px;             /* que la altura se ajuste */
   }
    .counter-section .row.gy-5 {
     margin-top: 0 !important;
